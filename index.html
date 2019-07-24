@@ -7,6 +7,8 @@
     <title>Gif Hunter</title>
 
     <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
@@ -14,20 +16,27 @@
 <body>
     <section class="main">
         <section class="container">
-            <h1>Gif Hunter</h1>
+            <h1>Gif Hunter<i class="fas fa-hippo"></i></h1>
         </section>
 
         <nav class="container flex-row">
             <p id="label">Search For a Gif</p>
-            <input type="form">
-            <button id="search">Search</button>
+            <form id="gif-search">
+            <input type="text">
+            <button type="submit" id="search">Search</button>
+            </form>
         </nav>
         <article class="container">
             <div class="flex-box" id="gif-results">
-                <p id="gif-message">Search For Anything..</p>
+                <p class="gif-message" id="gif-start-message">Search For Anything..</p>
             </div>
         </article>
     </section>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
